@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;    
+}
+
+
+
+.dont{
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #F9F9F9;
+    
+    .super{
+        width: 45%;
+        min-height: 36vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        .get{
+            width: 95%;
+            height: 14vh;
+            display: flex;
+            align-items: start;
+            justify-content: end;
+            flex-direction: column;
+            h1{
+                font-size: 22px;
+                font-weight: 500;
+                color: #232323;
+                margin-bottom: 7px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                color: #716464;
+            }
+        }
+
+        .geto{
+            width: 100%;
+            min-height: 21vh;
+            display: flex;
+            align-items: start;
+            justify-content: space-around;
+            flex-direction: column;
+            margin-top: 20px;
+            .car{
+                width: 400px;
+                height: 15vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-bottom: 14px;
+                position: relative;
+                a{
+                    text-decoration: none;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                }
+
+                .img{
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        width: 70%;
+                        height: 15vh;
+                        border-radius: 10px;
+                    }
+                }
+
+                .run{
+                    width: 70%;
+                    height: 6vh;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    flex-direction: column;
+                    .name{
+                        width: 100%;
+                        height: 3vh;
+                        display: flex;
+                        align-items: start;
+                        justify-content: start;
+                        h1{
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #232323;
+                            white-space: nowrap;     // Matnni yangi qatordan boshlanmasligi uchun
+                            overflow: hidden;        // Kartadan chiqib ketmasligi uchun
+                            text-overflow: ellipsis; // Uzun qismni "..." qilib ko‘rsatish
+                            width: 100%;             // Kenglikni moslash
+                        }
+                    }
+                    .janr{
+                        width: 100%;
+                        height: 3vh;
+                        display: flex;
+                        align-items: start;
+                        justify-content: start;
+                        margin-top: 6px;
+                        h1{
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: #747474;
+                            white-space: nowrap;     // Matnni yangi qatordan boshlanmasligi uchun
+                            overflow: hidden;        // Kartadan chiqib ketmasligi uchun
+                            text-overflow: ellipsis; // Uzun qismni "..." qilib ko‘rsatish
+                            width: 100%;             // Kenglikni moslash
+                        }
+                    }
+                }
+            }
+        }
+
+        button{
+            width: 94%;
+            height: 5vh;
+            border: none;
+            background: none;
+            font-size: 15px;
+            text-align: start;
+            font-weight: 400;
+            cursor: pointer;
+            color: #1976D2;
+        }
+    }
+}

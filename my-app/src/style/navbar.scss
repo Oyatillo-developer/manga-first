@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;    
+}
+
+
+
+.home{
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  .boss{
+    width: 95%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navigate{
+      width: 30%;
+      height: 7vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo{
+        width: 170px;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        a{
+          font-size: 35px;
+          font-weight: 900;
+          text-decoration: none;
+          color: #212121;
+          &:nth-of-type(2){
+            color: #1976D2;
+          }
+        }
+
+        &:hover{
+          a{
+            color: #1976D2;
+            &:nth-of-type(2){
+              color: #212121;
+            }
+          }
+        }
+      }
+
+      .links{
+        width: 350px;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        a{
+          text-decoration: none;
+          color: #202020;
+          font-size: 15px;
+          font-weight: 400;
+          &:hover{
+            color: #1976D2;
+          }
+        }
+      }
+    }
+
+    .profile{
+      width: 250px;
+      height: 7vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      a{
+        .icon{
+          font-size: 22px;
+          color: #432020;
+        }
+      }
+    }
+  }
+}
